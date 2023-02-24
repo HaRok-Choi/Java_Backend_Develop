@@ -146,6 +146,7 @@ public class Operator {
 		System.out.println(number5);
 		boolean boolean10 = (number5 > number6) || (number6 > ++number5);
 		System.out.println(number5);
+//		AND나 OR연산을 쓸 때 앞의 식이 결정되면 뒷 연산은 적용하지않음
 		
 //		!: NOT
 //		논리값의 부정을 반환

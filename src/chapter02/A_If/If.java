@@ -29,7 +29,7 @@ public class If {
 			System.out.println("미성년자 입니다.");
 		}
 //		if문과 마찬가지로 else문도 코드 블럭에 오는 실행할 코드가 하나의 구문이면 {}를 제거하고 사용 가능
-//		어짜피 메소드를 이용해 선언하면 한줄만 오기에 이 방법을 더 선호
+//		어차피 메소드를 이용해 선언하면 한줄만 오기에 이 방법을 더 선호
 		if (age > 19) System.out.println("성인입니다.");
 		else System.out.println("미성년자 입니다.");
 		
