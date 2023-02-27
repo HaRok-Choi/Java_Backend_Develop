@@ -33,6 +33,7 @@ public class Switch {
 			System.out.println("자바 고급 공부");
 		default:
 			System.out.println("범위초과");
+//			default는 필수가 아님 
 		}
 
 	}
