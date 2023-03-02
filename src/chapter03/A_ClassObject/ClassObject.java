@@ -74,6 +74,7 @@ public class ClassObject {
 
 		System.out.println(iPhone14.modelName);
 		System.out.println(iPhone14.telNumber);
+		System.out.println("==========================================================");
 
 		System.out.println(iPhone14Pro.modelName);
 		System.out.println(iPhone14Pro.memory);
@@ -101,6 +102,7 @@ public class ClassObject {
 		smartPhonList[1] = iPhone14Pro;
 		smartPhonList[2] = new SmartPhone();
 
+//		SmartPhone smartPhone = new SmartPhone();
 		for (int index = 0; index < smartPhonList.length; index++) {
 			SmartPhone smartPhone = new SmartPhone();
 			smartPhone.telNumber = "010-1111-111" + index;

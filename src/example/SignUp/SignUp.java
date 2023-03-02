@@ -17,7 +17,7 @@ public class SignUp {
 
 	public static void main(String[] args) {
 //		다차원 배열임
-		String[] idList = { "asd", "qwe", "zxc" };
+		String[] idList = {"asd", "qwe", "zxc"};
 
 //		1. 사용자로부터 아이디, 패스워드, 패스워드 확인, 이름을 입력받음
 
