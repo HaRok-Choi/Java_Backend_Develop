@@ -24,7 +24,8 @@ public class While {
 			number++;
 //			break: 반복문의 코드블럭을 강제로 종료 시킬때 사용
 //			일반적으로 break문은 조건문과 함께 사용됨
-			if (number == 200) break;
+			if (number == 200) 
+				break;
 		}
 		
 //		do - while
