@@ -57,7 +57,6 @@ public class ExchangeApplication {
 		}
 		
 //		관리하고있는 화폐 단위가 아닐 때
-		
 		boolean hasExchanging = false;
 		boolean hasExchanged = false;
 		
@@ -78,7 +77,6 @@ public class ExchangeApplication {
 		double resultAmount = amount;
 		
 		for (ExchangeRate exchangeRate : exchangeRates) {
-			
 			boolean isSame = exchangingCurrency.equals(exchangeRate.getExchangingCurrency()) && exchangedCurrency.equals(exchangeRate.getExchangedCurrency());
 			if (isSame) {
 				resultAmount *= exchangeRate.getExchangeRate();
