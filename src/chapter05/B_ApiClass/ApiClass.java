@@ -71,9 +71,11 @@ public class ApiClass {
 		
 //		집가서 한번 더 봐야징
 		int[] lotto = new int[6];
+		
 		for (int index = 0; index < lotto.length; index++) {
 			boolean equal = false;
 			int lottoNumber = random.nextInt(45) + 1;
+			
 			for (int subIndex = 0; subIndex < lotto.length; subIndex++) {
 				if (lotto[subIndex] == lottoNumber) {
 					equal = true;
@@ -83,6 +85,7 @@ public class ApiClass {
 					continue;
 				}
 			}
+			
 			lotto[index] = lottoNumber;
 		}
 		for (int lottoNumber : lotto) {

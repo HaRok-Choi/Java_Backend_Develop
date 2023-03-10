@@ -1,10 +1,13 @@
 package chapter05.C_DateTime;
 
 import java.text.SimpleDateFormat;
+import java.time.DayOfWeek;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.Month;
+import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
@@ -75,12 +78,43 @@ public class DateTime {
 		LocalDateTime localDateTimeOf = LocalDateTime.of(localDateOf, localTimeOf);
 		System.out.println(localDateTimeOf);
 		
+//		특정 날짜 혹은 시간 가져오기
+//		.getXXX();
+		int year = localDateTime.getYear();
+		System.out.println(year);
+		int month = localDateTime.getMonthValue();
+		System.out.println(month);
+		Month enumMonth = localDateTime.getMonth();		// 현재 달 영문으로
+		System.out.println(enumMonth);
+		int dayOfYear = localDateTime.getDayOfYear();	// 이번년도에서 며칠째인지
+		System.out.println(dayOfYear);
+		int dayOfMonth = localDateTime.getDayOfMonth();	// 해당 달의 며칠째인지
+		System.out.println(dayOfMonth);
+		DayOfWeek dayOfWeek = localDateTime.getDayOfWeek();	// 무슨 요일인지
+		System.out.println(dayOfWeek);
 		
+		boolean isLeapYear = localDate.isLeapYear();	// 윤년 판별 해줌
+		System.out.println(isLeapYear);
 		
+		int hour = localDateTime.getHour();
+		int minute = localDateTime.getMinute();
+		int second = localDateTime.getSecond();
+		int nano = localDateTime.getNano();
+		System.out.println(hour);
+		System.out.println(minute);
+		System.out.println(second);
+		System.out.println(nano);
+				
+//		특정 날짜 및 시간 변경 (직접 변경, 더하기, 빼지)
+//		직접 변경 : withXXX(int 타입 데이터);
+//		더하기 - 빼기 : plusXXX(long 타입 데이터), minusXXX(long 타입 데이터)
+		localDateTime = localDateTime.withYear(2012).plusWeeks(4).minusHours(9);
+		localDateTime = localDateTime.withDayOfYear(1).plusMinutes(50).minusNanos(50000);
 		
+		Instant instant = localDateTime.atZone(ZoneId.systemDefault()).toInstant();
+		Date datetime = Date.from(instant);
 		
-		
-		
+		System.out.println(datetime);
 		
 		
 	}
